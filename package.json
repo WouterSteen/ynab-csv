@@ -1,7 +1,7 @@
 {
   "name": "ynab-csv",
   "version": "2.0.0",
-  "description": "Tool for making your CSV files ready to import into YNAB online",
+  "description": "Tool for making your CSV files from the ING BANK ready to import into YNAB online",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,19 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aniav/ynab-csv.git"
+    "url": "https://github.com/woutersteen/ynab-csv.git"
   },
   "keywords": [
     "ynab",
-    "csv"
+    "csv",
+    "ING Bank"
   ],
   "dependencies": {
     "express": "^4.11.2"
   },
-  "author": "Ryan Hall",
+  "author": "Ryan Hall & Wouter Steenmeijer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aniav/ynab-csv/issues"
+    "url": "https://github.com/woutersteen/ynab-csv/issues"
   },
-  "homepage": "https://github.com/aniav/ynab-csv"
+  "homepage": "https://www.steenmeijer.nu/ynab-csv"
 }

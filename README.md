@@ -1,11 +1,14 @@
 # ynab-csv
 
-
 Tool for making your CSV files ready to import into YNAB.
 
-http://aniav.github.io/ynab-csv/
+This is a form from aniav/ynab-csv. This tool is not compatible with the weird CSV export from the ING Bank.
 
-**NOTE:** currently works best in Chrome. See "Known Issues" below for more details.
+This also means that this tool is only compatible with the ING bank. If you use another dutch bank feel free to create an issue.
+
+https://www.steenmeijer.nu/ynab-csv/
+
+**NOTE:** currently works best in Chrome.
 
 
 ## How to Use
@@ -19,20 +22,20 @@ http://aniav.github.io/ynab-csv/
 
 Your data never leaves your computer. All the processing happens locally. This is part of the reason Firefox and Safari have issues saving the new file.
 
-
 ## Known Issues
 
 * Currently **Firefox** saves the file with a `.part` extension and **Safari** save the file with the filename as `Unknown`. For best support just use **Chrome** for now.
 
 ## Reporting Issues
 
-If you have any other issues or suggestions, go to https://github.com/aniav/ynab-csv/issues and create an issue if one doesn't already exist. If the issue has to do with your csv file, please create a new gist (https://gist.github.com/) with the content of the CSV file and share the link in the issue. If you tweak the CSV file before sharing, just make sure whatever version you end up sharing still causes the problem you describe.
+If you have any other issues or suggestions, go to https://github.com/woutersteen/ynab-csv/issues and create an issue if one doesn't already exist. If the issue has to do with your csv file, please create a new gist (https://gist.github.com/) with the content of the CSV file and share the link in the issue. If you tweak the CSV file before sharing, just make sure whatever version you end up sharing still causes the problem you describe.
 
 ## Contribute
 
 1. Fork and clone the project
 2. `cd` into project
 3. Run `npm install`   # You will need to install node and npm if it is not already
+4. If you use OSX change the  `xdg-open` command in package.json to `open`
 4. Run `npm start`
 5. Make your changes locally and test them to make sure they work
 6. Commit those changes and push to your forked repository

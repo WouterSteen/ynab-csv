@@ -2,7 +2,7 @@
 <!-- vim: set tabstop=2 shiftwidth=2 softtabstop=2 expandtab : -->
 <html lang="en">
   <head>
-    <title>YNAB CSV Converter</title>
+    <title>ING BANK CSV TO YNAB Converter</title>
     <link rel="icon" type="image/png" href="images/icon16.png" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
@@ -13,19 +13,6 @@
 
     <script src="src/data_object.js"></script>
     <script src="src/app.js"></script>
-    <script src="https://d3tvtfb6518e3e.cloudfront.net/3/opbeat.min.js"
-        data-org-id="1e81854d04cb41269d776ad75dd01a9c"
-        data-app-id="6fd115e6f0">
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112130993-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-112130993-1');
-    </script>
   </head>
   <body ng-controller='ParseController' ng-class="{angular_loaded: angular_loaded}">
 
@@ -36,11 +23,11 @@
           <div class='btn btn-default' ng-click='reloadApp()'><i class='fa fa-refresh'></i> Load a different file</div>
           <div class='btn btn-primary' ng-click='downloadFile()'><i class='fa fa-cloud-download'></i> Save YNAB Data</div>
         </div>
-        <a href='https://github.com/aniav/ynab-csv/issues/new' target='_blank' class='btn btn-default'><i class='fa fa-exclamation-circle'></i> Report an issue</a>
+        <a href='https://github.com/woutersteen/ynab-csv/issues/new' target='_blank' class='btn btn-default'><i class='fa fa-exclamation-circle'></i> Report an issue</a>
       </div>
-    </div>
+    </div>w
 
-    <div dropzone='data.source' encoding="{{file.chosenEncoding}}">
+    <div dropzone='data.source' encoding="{{file.cwhosenEncoding}}">
       <div class='container show_on_load'>
         <br>
         <div id='upload_wrapper' ng-if='!data_object.base_json'>
