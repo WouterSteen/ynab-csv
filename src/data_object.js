@@ -54,11 +54,17 @@ window.DataObject = class DataObject {
             //   the rest are just returned as they are.
             switch (col) {
               case "Outflow":
+
                 if (lookup['Outflow'] == lookup['Inflow']) {
                   tmp_row[col] = cell.startsWith('-') ? cell.slice(1) : "";
                 } else {
                   tmp_row[col] = cell;
                 }
+
+                if (row['Af Bij'] == "Af") {
+                    tmp_row[col] = row['Bedrag (EUR)'];
+                }
+
                 break;
               case "Inflow":
                 if (lookup['Outflow'] == lookup['Inflow']) {
@@ -66,7 +72,12 @@ window.DataObject = class DataObject {
                 } else {
                   tmp_row[col] = cell;
                 }
-                break;
+
+                if (row['Af Bij'] == "Bij") {
+                    tmp_row[col] = row['Bedrag (EUR)'];
+                }
+
+                  break;
               default:
                 tmp_row[col] = cell;
             }
